@@ -15,7 +15,7 @@ html,body {
 }
 /********* Profile *********/
 .left {
-    height: 90%;
+    height: 90vh;
     background-color: rgb(229, 226, 226);
     text-align: center;
     letter-spacing: 5px; 
@@ -56,7 +56,7 @@ html,body {
 }
 #links {
     display: flex;
-    height: 20%;
+    height: 20vh;
     justify-content: center;
     align-items: center;
     background-color: rgb(229, 226, 226);
@@ -77,12 +77,11 @@ html,body {
 .nav {
     z-index: 2;
     position: fixed;
-    height: 10%;
+    height: 10vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-bottom: env(safe-area-inset-bottom);
     
 }
 .nav button{
