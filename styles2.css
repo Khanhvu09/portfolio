@@ -2,7 +2,8 @@ html,body {
     position: relative;
     margin: 0;
     height: 100%;
-    background-color: rgb(229, 226, 226)
+    background-color: rgb(229, 226, 226);
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 /********** Main close button **********/
 .close-container{
@@ -81,7 +82,7 @@ html,body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-bottom:env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    padding-bottom: env(safe-area-inset-bottom);
     
 }
 .nav button{
