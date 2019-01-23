@@ -81,6 +81,7 @@ html,body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    padding: env(safe-area-inset-bottom)
 }
 .nav button{
     outline: none;
