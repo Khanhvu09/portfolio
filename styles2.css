@@ -1,0 +1,109 @@
+html,body {
+    position: relative;
+    margin: 0;
+    height: 100%;
+    background-color: rgb(229, 226, 226)
+}
+/********** Main close button **********/
+.close-container{
+    position: fixed;
+    z-index: 3;
+}
+.close-container button{
+    font-size: 20px;
+}
+/********* Profile *********/
+.left {
+    height: 90%;
+    background-color: rgb(229, 226, 226);
+    text-align: center;
+    letter-spacing: 5px; 
+    z-index: -1;
+}
+#pic {
+    border-radius: 50%;
+    width: 40%;
+}
+#name {
+    padding: 5%;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+}
+#job {
+    font-size: 30px;
+    padding-top: 0%;
+}
+
+/* Download Resume */
+.left button {
+    padding: 20px 50px 20px 50px;
+    border-radius: 10px;
+    opacity: 0.7;
+    font-size: 16px;
+    outline: none;
+}
+.left button:hover {
+    opacity: 1;
+    cursor: pointer;
+    /* font-size: 16.5px; */
+}
+/******** Links *********/
+.fab {
+    color: rgb(29, 28, 28);
+    
+}
+#links {
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(229, 226, 226);
+}
+
+
+
+
+#aboutBody {
+    /* display: none; */
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+}
+
+/******** Nav Buttons ********/
+.nav {
+    z-index: 2;
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.nav button{
+    outline: none;
+    color: rgb(201, 198, 198);
+    background-color: gray;
+    border: gray;
+    font-size: 18px;
+}
+#about {
+    height: 95px;
+    width: 95px;
+}
+#projects{
+    height: 95px;
+    width: 95px;
+}
+
+#contact {
+    height: 95px;
+    width: 95px;
+}
+
+#resume {
+    height: 95px;
+    width: 95px;
+}
