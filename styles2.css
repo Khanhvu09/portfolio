@@ -88,22 +88,24 @@ html,body {
     background-color: gray;
     border: gray;
     font-size: 18px;
+    height: 100%;
+    width: 100%;
 }
 #about {
-    height: 95px;
-    width: 95px;
+    /* height: 100%; */
+    /* width: 100%; */
 }
 #projects{
-    height: 95px;
-    width: 95px;
+    /* height: 100%; */
+    /* width: 100%; */
 }
 
 #contact {
-    height: 95px;
-    width: 95px;
+    /* height: 100%; */
+    /* width: 100%; */
 }
 
 #resume {
-    height: 95px;
-    width: 95px;
+    /* height: 100px; */
+    /* width: 100%; */
 }
