@@ -15,7 +15,7 @@ html,body {
 }
 /********* Profile *********/
 .left {
-    height: 90vh;
+    height: 90%;
     background-color: rgb(229, 226, 226);
     text-align: center;
     letter-spacing: 5px; 
@@ -56,7 +56,7 @@ html,body {
 }
 #links {
     display: flex;
-    height: 20vh;
+    height: 20%;
     justify-content: center;
     align-items: center;
     background-color: rgb(229, 226, 226);
