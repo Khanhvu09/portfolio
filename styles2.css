@@ -15,7 +15,7 @@ html,body {
 }
 /********* Profile *********/
 .left {
-    height: 90% auto;
+    height: 95%;
     background-color: rgb(229, 226, 226);
     text-align: center;
     letter-spacing: 5px; 
@@ -82,11 +82,11 @@ html,body {
     margin-bottom: constant(safe-area-inset-bottom); /* iOS 11.0 */
     margin-bottom: env(safe-area-inset-bottom); /* iOS 11.2 */
     /* margin-top: 0 auto; */
-    height: 10% auto;
+    height: 5%;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    /* align-items: flex-end; */
 
     
 }
