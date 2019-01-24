@@ -7,7 +7,7 @@ html,body {
 }
 /********** Main close button **********/
 .close-container{
-    position: fixed;
+    position: relative;
     z-index: 3;
 }
 .close-container button{
@@ -15,7 +15,7 @@ html,body {
 }
 /********* Profile *********/
 .left {
-    height: 95%;
+    height: 90%;
     background-color: rgb(229, 226, 226);
     text-align: center;
     letter-spacing: 5px; 
@@ -82,11 +82,11 @@ html,body {
     margin-bottom: constant(safe-area-inset-bottom); /* iOS 11.0 */
     margin-bottom: env(safe-area-inset-bottom); /* iOS 11.2 */
     /* margin-top: 0 auto; */
-    height: 5%;
+    height: 10%;
     width: 100%;
     display: flex;
     justify-content: center;
-    /* align-items: flex-end; */
+    align-items: flex-end;
 
     
 }
