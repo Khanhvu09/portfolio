@@ -21,7 +21,7 @@ $('#about').click(function(){
     </div>
     `,
     $('.close').show(),
-    // $('.main-button').hide()
+    $('.main-button').hide()
     )
 })
 $('#projects').click(function(){
@@ -56,7 +56,7 @@ $('#projects').click(function(){
         </div>
         `,
         $('.close').show(),
-        // $('.main-button').hide()
+        $('.main-button').hide()
     )
 })
 $('#contact').click(function(){
@@ -91,7 +91,7 @@ $('#contact').click(function(){
         </div>
         `,
         $('.close').show(),
-        // $('.main-button').hide()
+        $('.main-button').hide()
     )
 })
 $('#resume').click(function(){
@@ -126,7 +126,7 @@ $('#resume').click(function(){
         </div>
         `,
         $('.close').show(),
-        // $('.main-button').hide()
+        $('.main-button').hide()
     )
 })
     $('.close').click(function(){
