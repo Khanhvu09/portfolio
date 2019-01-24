@@ -79,9 +79,9 @@ html,body {
 .nav {
     z-index: 2;
     position: fixed;
-    margin-bottom: constant(safe-area-inset-bottom); /* iOS 11.0 */
-    margin-bottom: env(safe-area-inset-bottom); /* iOS 11.2 */
-    /* margin-top: 0 auto; */
+    /* margin-bottom: constant(safe-area-inset-bottom); iOS 11.0 */
+    /* margin-bottom: env(safe-area-inset-bottom); iOS 11.2 */
+    padding-bottom: 25px;
     height: 10%;
     width: 100%;
     display: flex;
