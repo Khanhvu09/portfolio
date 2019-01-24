@@ -2,7 +2,8 @@ html,body {
     position: relative;
     margin: 0;
     height: 100%;
-    background-color: rgb(229, 226, 226);
+    /* background-color: rgb(229, 226, 226); */
+    background-color: #393f4d;
     /* padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); */
 }
 /********** Main close button **********/
@@ -16,7 +17,8 @@ html,body {
 /********* Profile *********/
 .left {
     height: 90%;
-    background-color: rgb(229, 226, 226);
+    /* background-color: rgb(229, 226, 226); */
+    background-color: #1d1e22;
     text-align: center;
     letter-spacing: 5px; 
     z-index: -1;
@@ -30,10 +32,12 @@ html,body {
     font-size: 2.5em;
     text-align: center;
     margin: 0;
+    color: #d4d4dc;
 }
 #job {
     font-size: 30px;
     padding-top: 0%;
+    color: #d4d4dc;
 }
 
 /* Download Resume */
@@ -43,6 +47,8 @@ html,body {
     opacity: 0.7;
     font-size: 16px;
     outline: none;
+    color: #393f4d;
+    background-color: #feda6a;
 }
 .left button:hover {
     opacity: 1;
@@ -51,7 +57,8 @@ html,body {
 }
 /******** Links *********/
 .fab {
-    color: rgb(29, 28, 28);
+    /* color: rgb(29, 28, 28); */
+    color: #d4d4dc;
     
 }
 #links {
@@ -59,7 +66,8 @@ html,body {
     height: 20%;
     justify-content: center;
     align-items: center;
-    background-color: rgb(229, 226, 226);
+    /* background-color: rgb(229, 226, 226); */
+    background-color: #1d1e22;
 }
 
 
