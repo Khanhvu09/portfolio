@@ -1,5 +1,6 @@
 $('.close').hide()
-$('#about').click(function(){
+$('#aboutBody').hide();
+$('#aboutButton').click(function(){
     $('#aboutBody').html(`
     <div id="test" class="test">
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
@@ -20,11 +21,12 @@ $('#about').click(function(){
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
     </div>
     `,
-    $('.close').show(),
-    $('.main-button').hide()
     )
+    $('.close').show()
+    $('.main-button').hide()
+    $('#aboutBody').show()
 })
-$('#projects').click(function(){
+$('#projectsButton').click(function(){
     console.log('hello')
     $('#aboutBody').html(
         `
@@ -47,43 +49,37 @@ $('#projects').click(function(){
         
         </div>
         `,
+        
+        )
         $('.close').show(),
-        $('.main-button').hide()
-    )
+        $('.main-button').hide(),
+        $('#aboutBody').show()
 })
-$('#contact').click(function(){
+$('#contactButton').click(function(){
     console.log('hello')
     $('#aboutBody').html(
         `
-        <div id="test3" class="test">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
-        
+        <div id="contact" class="test">
+            <h1>Contact Me</h1>
+            <form id="usrform">
+                <input type="text" placeholder="Your Name"/><br>
+                <input type="text" placeholder="Your Email"/><br>
+            </form>
+            <textarea name="comment" form="usrform" id="message" placeholder="Message"></textarea>
+            <button>Submit</button>
         </div>
         `,
+        )
         $('.close').show(),
-        $('.main-button').hide()
-    )
+        $('.main-button').hide(),
+        $('#aboutBody').show()
 })
-$('#resume').click(function(){
+$('#resumeButton').click(function(){
     console.log('hello')
     $('#aboutBody').html(
         `
         <div id="test4" class="test">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
+        <p>Lorem khanh ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora deleniti aliquam sapiente quidem, quam, ullam praesentium vel excepturi voluptatem odio sunt optio porro soluta? Laborum corporis eveniet sequi non sed.
@@ -102,12 +98,13 @@ $('#resume').click(function(){
         </div>
         `,
         $('.close').show(),
-        $('.main-button').hide()
+        $('.main-button').hide(),
+        $('#aboutBody').show()
     )
 })
-    $('.close').click(function(){
+    $('.close').click(()=>{
         console.log('Hello')
-        $('#aboutBody').html(``)
+        $('#aboutBody').hide()
         $('.close').hide()
         $('.main-button').show()
     })
