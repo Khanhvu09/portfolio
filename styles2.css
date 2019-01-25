@@ -127,6 +127,9 @@ html,body {
 
 #contact {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #contact input {
     border: 1px solid black;
