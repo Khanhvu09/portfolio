@@ -86,7 +86,7 @@ html,body {
     z-index: 2;
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: #1d1e22;
 }
 .test {
     margin: 60px;
@@ -135,19 +135,24 @@ html,body {
     flex-direction: column;
     align-items: center;
     background-color: #1d1e22;
-    height: 100%;
+    height: 50%;
     width: 100%;
     margin: 0;
+    /* padding-top: 20px; */
+    justify-content: space-around;
 }
 #contact input {
     border: 1px solid black;
-    width: 200px;
+    height: 28px;
+    width: 250px;
     background-color: #feda6a;
     opacity: 0.7;
     border-radius: 0.3rem;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+    margin-bottom: 20px;
+    outline: none;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #1d1e22;
@@ -164,7 +169,7 @@ color: #1d1e22;
 
 #contact textarea {
     height: 100px;
-    width: 200px;
+    width: 250px;
     padding: 1px;
     border: 1px solid black;
     background-color: #feda6a;
@@ -177,10 +182,13 @@ color: #1d1e22;
 }
 #contact h1 {
     color: #d4d4dc;
+    font-size: 50px;
 }
 #contact button {
     border: 1px solid black;
     background-color: #feda6a; 
+    margin-top: 20px;
+    opacity: 0.7;
 }
 #resume {
     /* height: 100px; */
