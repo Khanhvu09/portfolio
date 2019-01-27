@@ -171,6 +171,9 @@ color: #1d1e22;
     opacity: 0.7;
     border-radius: 0.3rem;
     outline: none;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 #contact h1 {
     color: #d4d4dc;
