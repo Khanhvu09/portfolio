@@ -61,12 +61,15 @@ $('#contactButton').click(function(){
         `
         <div id="contact" class="test">
             <h1>Contact Me</h1>
-            <form id="usrform">
-                <input type="text" placeholder="Your Name"/><br>
-                <input type="text" placeholder="Your Email"/>
+            <form action="https://formspree.io/kqvu09@gmail.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name"/><br>
+                <input type="email" name="_replyto" placeholder="Your email">
+                <input type="hidden" name="_subject" value="Website contact" />
+                <input type="hidden" name="_format" value="plain" />
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <input type="hidden" name="_next" value="www.khanhqvu.com" />
+                <input type="submit" value="Send"/>
             </form>
-            <textarea name="comment" form="usrform" id="message" placeholder="Message"></textarea>
-            <button>Submit</button>
         </div>
         `,
         )
