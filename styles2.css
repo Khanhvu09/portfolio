@@ -141,11 +141,13 @@ html,body {
 }
 #contact input {
     border: 1px solid black;
-    -webkit-appearance: none;
     width: 200px;
     background-color: #feda6a;
     opacity: 0.7;
     border-radius: 0.3rem;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #1d1e22;
@@ -167,7 +169,9 @@ color: #1d1e22;
     background-color: #feda6a;
     opacity: 0.7;
     border-radius: 0.3rem;
-    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 #contact h1 {
     color: #d4d4dc;
