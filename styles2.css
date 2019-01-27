@@ -10,11 +10,13 @@ html,body {
 .close-container{
     position: fixed;
     z-index: 3;
+    border: 0px;
+    background-color: #1d1e22; 
+    -webkit-appearance: none;
 }
 .close-container button{
     font-size: 10px;
     color: #d4d4dc;
-    -webkit-appearance: none;
 }
 /********* Profile *********/
 .left {
@@ -146,16 +148,16 @@ html,body {
     border-radius: 0.3rem;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #d4d4dc;
+    color: #1d1e22;
     opacity: 1; /* Firefox */
 }
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-color: #d4d4dc;
+color: #1d1e22;
 }
   
 ::-ms-input-placeholder { /* Microsoft Edge */
-color: #d4d4dc;
+color: #1d1e22;
 }
 #contact textarea {
     height: 100px;
@@ -168,6 +170,10 @@ color: #d4d4dc;
 }
 #contact h1 {
     color: #d4d4dc;
+}
+#contact button {
+    border: 1px solid black;
+    background-color: #feda6a; 
 }
 #resume {
     /* height: 100px; */
