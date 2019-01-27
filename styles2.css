@@ -13,6 +13,7 @@ html,body {
 }
 .close-container button{
     font-size: 10px;
+    color: #d4d4dc;
 }
 /********* Profile *********/
 .left {
@@ -124,21 +125,45 @@ html,body {
     /* height: 100%; */
     /* width: 100%; */
 }
-
+/********** Contact Page *********/
 #contact {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #1d1e22;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 #contact input {
     border: 1px solid black;
     width: 200px;
+    background-color: #feda6a;
+    opacity: 0.7;
+    border-radius: 8%;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #d4d4dc;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: #d4d4dc;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+color: #d4d4dc;
 }
 #contact textarea {
     height: 100px;
     width: 200px;
     border: 1px solid black;
+    background-color: #feda6a;
+    opacity: 0.7;
+}
+#contact h1 {
+    color: #d4d4dc;
 }
 #resume {
     /* height: 100px; */
