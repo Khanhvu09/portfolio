@@ -158,16 +158,19 @@ html,body {
     outline: none;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Text Me One', sans-serif;
     color: #1d1e22;
     opacity: 1; /* Firefox */
 }
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-color: #1d1e22;
+    font-family: 'Text Me One', sans-serif;
+    color: #1d1e22;
 }
   
 ::-ms-input-placeholder { /* Microsoft Edge */
-color: #1d1e22;
+    font-family: 'Text Me One', sans-serif;
+    color: #1d1e22;
 }
 
 #contact textarea {
@@ -193,6 +196,8 @@ color: #1d1e22;
     margin-top: 20px;
     opacity: 0.7;
     border-radius: 0.3rem;
+    font-family: 'Text Me One', sans-serif;
+    font-weight: bold;
 }
 #resume {
     /* height: 100px; */
