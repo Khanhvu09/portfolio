@@ -62,7 +62,7 @@ $('#contactButton').click(function(){
         <div id="contact" class="test">
             <h1>Contact Me</h1>
             <form id="usrform">
-                <input type="text" placeholder="Your Name"/>
+                <input type="text" placeholder="Your Name"/><br>
                 <input type="text" placeholder="Your Email"/>
             </form>
             <textarea name="comment" form="usrform" id="message" placeholder="Message"></textarea>
