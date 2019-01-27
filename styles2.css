@@ -10,11 +10,11 @@ html,body {
 .close-container{
     position: fixed;
     z-index: 3;
-    border: 0px;
-    background-color: #1d1e22; 
-    -webkit-appearance: none;
 }
 .close-container button{
+    background-color: #1d1e22; 
+    border: 0px;
+    -webkit-appearance: none;
     font-size: 10px;
     color: #d4d4dc;
 }
