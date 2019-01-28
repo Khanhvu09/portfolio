@@ -258,11 +258,11 @@ html,body {
         box-shadow: 15px 20px 80px 1px #bbbbbb;
         z-index: -1;
     }
-    .nav button{
+    /* .nav button{
         outline: none;
         border: gray;
         font-size: 18px;
-    }
+    } */
     #projectsButton{
         position: fixed; 
         top: 80%;
