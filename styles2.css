@@ -232,7 +232,7 @@ html,body {
     #aboutBody {
         position: relative;
         float: right;
-        width: 75%;
+        width: 70%;
         height: 100%;
     }
     #contact input {
@@ -244,7 +244,7 @@ html,body {
 
     }
     .close-container{
-        left: 25%;
+        left: 30%;
     }
     #aboutButton {
         position: fixed;
@@ -293,7 +293,7 @@ html,body {
         box-shadow: -20px 20px 80px 1px #bbbbbb;
         z-index: -1;
     }
-    #resumeButton {
+    #skillsButton {
         position: fixed;
         margin: 0 auto;
         top: 80%;
@@ -302,11 +302,22 @@ html,body {
         /* border: 0.5px solid gray; */
         transform-origin: top left;
     }
-    #resumeButton:hover {
+    #skillsButton:hover {
         box-shadow: -20px -20px 80px 1px #bbbbbb;
         z-index: -1;
     }
-    
+    #about-text {
+        margin-right: 30px;
+    }
+    #contact-text {
+        margin-left: 30px;
+    }
+    #project-text {
+        margin-right: 30px;
+    }
+    #resume-text {
+        margin-left: 30px;
+    }
 } 
 @media only screen and (min-width: 768px) {
     /* .left {
