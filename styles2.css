@@ -94,6 +94,7 @@ html,body {
     margin: 60px;
     /* height: 100%; */
 }
+/********* Project Page *********/
 .projectImage {
     height: 150px;
     width: 295px;
@@ -106,6 +107,10 @@ html,body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+#projectTitle {
+    display: flex;
+    justify-content: center;
 }
 /********* The Proffessional Hobo *********/
 
@@ -191,7 +196,21 @@ html,body {
     flex-direction: row;
     justify-content: space-around;
 }
+/********* Skills Page *********/
+#skillsTitle {
+    display: flex;
+    justify-content: center;
+}
+#skillsPage {
+    display: flex;
+    flex-direction: row;
+}
+#knownSkills {
+    border-bottom: 1px soild #feda6a;
+}
+#knownSkillsTitle {
 
+}
 /******** Nav Buttons ********/
 .nav {
     z-index: 2;
@@ -206,13 +225,11 @@ html,body {
     font-family: 'Text Me One', sans-serif;
     font-weight: bold;
     outline: none;
-    /* color: rgb(201, 198, 198); */
     color: #393f4d;
-    /* background-color: gray; */
     background-color: #feda6a;
     opacity: 0.7;
     border: gray;
-    font-size: 18px;
+    font-size: 30px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -325,6 +342,14 @@ html,body {
         right: 30%;
         left: 20%;
     }
+    /* #aboutButton {
+        background-color: #1d1e22;
+        color: #d4d4dc
+    }
+    #skillsButton {
+        background-color: #1d1e22;
+        color: #d4d4dc;
+    } */
     /********* Pages *********/
     #aboutBody {
         position: relative;
@@ -380,7 +405,7 @@ html,body {
     #about-text {
         position: relative;
         bottom: 40px;
-        right: 40px;
+        right: 20px;
         transform: rotate(-45deg)
     }
     /********* Projects Page Button *********/
@@ -398,7 +423,7 @@ html,body {
     #project-text {
         position: relative;
         right: 40px;
-        top: 40px;
+        top: 30px;
         transform: rotate(-45deg)
     }
     /********* Projects Page Body *********/
@@ -427,7 +452,7 @@ html,body {
     }
     #contact-text {
         position: relative;
-        bottom: 40px;
+        bottom: 60px;
         left: 40px;
         transform: rotate(-45deg)
     }
@@ -447,8 +472,8 @@ html,body {
     }
     #skills-text {
         position: relative;
-        top: 30px;
-        left: 40px;
+        /* top: 10px; */
+        left: 20px;
         /* margin-top: -22px; */
         /* margin-left: 30px; */
         transform: rotate(-45deg)
