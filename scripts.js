@@ -89,14 +89,14 @@ $('#skillsButton').click(function(){
             <div id="knownSkills">
                 <i class="devicon-html5-plain-wordmark"></i>
                 <i class="devicon-css3-plain-wordmark"></i>
+                <i class="devicon-express-original-wordmark"></i>
                 <i class="fab fa-js"></i>
                 <i class="devicon-python-plain-wordmark"></i>
                 <i class="fab fa-aws"></i>
-                <i class="fab fa-node"></i>
+                <i class="devicon-mysql-plain-wordmark"></i>
                 <i class="devicon-jquery-plain-wordmark"></i>
                 <i class="devicon-apache-plain-wordmark"></i>
-                <i class="devicon-mysql-plain-wordmark"></i>
-                <i class="devicon-express-original-wordmark"></i>
+                <i class="fab fa-node"></i>
             </div>
             <h3 class="skillsTitle">Skills I'm learning</h3>
             <div id="learningSkills">
