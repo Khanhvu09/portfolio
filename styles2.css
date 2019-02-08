@@ -196,15 +196,29 @@ html,body {
 }
 #skillsPage {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 #knownSkills {
-    width: 100%;
-}
-#knownSkillsTitle {
     display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+#skillsPage i {
+    margin: 18px;
+    font-size: 60px;
+}
+.skillsTitle {
+    display: flex;
+    flex-direction: column;
     border-bottom: 1px solid white;
-    width: 100%;
+    width: 80%;
+}
+#learningSkills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
 }
 /******** Nav Buttons ********/
 .nav {
