@@ -118,8 +118,8 @@ html,body {
     font-size: 27px;
 }
 #TPHGitHub {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     width: 60px;
     text-decoration: none;
     color: #393f4d;
@@ -141,7 +141,7 @@ html,body {
     font-weight: 900;
     border: 1px solid #feda6a;
     background-color: #feda6a;
-    padding: 8px 18px 8px 18px;
+    padding: 8px 31px 8px 31px;
     border-radius: 8px;
     opacity: 0.7;
 }
@@ -150,7 +150,7 @@ html,body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* margin-bottom: 40px; */
+    margin-bottom: 40px;
 }
 /********* The Budget Hobo *********/
     
@@ -409,6 +409,7 @@ html,body {
     #projectPage a:hover {
         opacity: 1;
     }
+
  
     /********* Contact Page Button *********/
     #contactButton {
