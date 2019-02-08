@@ -471,4 +471,10 @@ html,body {
         left: 40px;
         transform: rotate(-45deg)
     }
+    #knownSkills {
+        justify-content: left;
+    }
+    #learningSkills {
+        justify-content: left;
+    }
 } 
