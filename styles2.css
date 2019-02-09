@@ -363,7 +363,9 @@ html,body {
     }
     .nav button {
         font-size: 30px;
-        box-shadow: inset 0 0 10px #1d1e228c;
+        border: 1px solid #feda6a;
+        /* box-shadow: inset 0 0 40px #1d1e228c; */
+        box-shadow: inset 0 0 10px #1d1e22f5;
     }
  
     /********* Pages *********/
