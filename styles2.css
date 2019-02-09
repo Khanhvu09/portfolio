@@ -241,7 +241,7 @@ html,body {
 }
 /******** Nav Buttons ********/
 .nav {
-    z-index: 2;
+    z-index: 3;
     position: fixed;
     height: 10%;
     width: 100%;
@@ -254,8 +254,8 @@ html,body {
     font-weight: bold;
     outline: none;
     color: #393f4d;
-    background-color: #feda6a;
-    opacity: 0.7;
+    background-color: #d3b456;
+    /* opacity: 0.7; */
     border: gray;
     font-size: 18px;
     height: 100%;
@@ -412,6 +412,8 @@ html,body {
         position: fixed;
         right: 35%;
         bottom: 20%;
+        /* right: 540px; */
+        /* bottom: 240px; */
         padding: 1024px 60px 60px 1024px;
         transform-origin: bottom right;
     }
@@ -421,14 +423,18 @@ html,body {
     }
     #about-text {
         position: absolute;
-        bottom: 60px;
-        right: 40px;
+        /* bottom: 60px; */
+        bottom: 220px;
+        right: 200px;
+        /* right: 40px; */
         transform: rotate(-45deg);
     }
     /********* Projects Page Button *********/
     #projectsButton{
         position: fixed; 
         top: 80%;
+        /* top: 330px; */
+        /* right: 600px; */
         right: 35%;
         padding: 60px 60px 1024px 1024px;
         transform-origin: top right;
@@ -439,8 +445,8 @@ html,body {
     }
     #project-text {
         position: absolute;
-        right: 60px;
-        top: 100px;
+        right: 260px;
+        top: 300px;
         transform: rotate(-45deg)
     }
     /********* Projects Page Body *********/
@@ -472,6 +478,8 @@ html,body {
         position: fixed;
         margin: 0 auto;
         left: 65%;
+        /* left: 970px; */
+        /* bottom: 400px; */
         bottom: 20%;
         padding: 1024px 1024px 60px 60px;
         transform-origin: bottom left;
@@ -482,8 +490,8 @@ html,body {
     }
     #contact-text {
         position: absolute;
-        bottom: 100px;
-        left: 60px;
+        bottom: 400px;
+        left: 360px;
         transform: rotate(-45deg)
     }
     /********* Skills Page Button *********/
@@ -492,6 +500,8 @@ html,body {
         margin: 0 auto;
         top: 80%;
         left: 65%;
+        /* top: 300px; */
+        /* left: 830px; */
         padding: 60px 1024px 1024px 60px;
         /* border: 0.5px solid gray; */
         transform-origin: top left;
@@ -502,8 +512,8 @@ html,body {
     }
     #skills-text {
         position: absolute;
-        top: 60px;
-        left: 40px;
+        top: 260px;
+        left: 240px;
         transform: rotate(-45deg)
     }
     #knownSkills {

@@ -1,5 +1,27 @@
 $('.close').hide()
 $('#aboutBody').hide();
+$(document).ready(()=>{
+    animate()
+})
+function animate(){
+    $('#about-text').animate({right: '40px',bottom:'60px'}, 600, 'linear')
+    $('#contact-text').animate({left: '60px',bottom:'100px'}, 600, 'linear')
+    $('#project-text').animate({right: '60px',top:'100px'}, 600, 'linear')
+    $('#skills-text').animate({top: '60px',left:'40px'}, 600, 'linear')
+}
+function animate2(){
+    $('#projectsButton').animate({top: '80%', right: '35%'}, 600, 'linear')
+    $('#contactButton').animate({left: '65%', bottom: '20%'}, 600, 'linear')
+    $('#aboutButton').animate({right: '35%', bottom: '20%'}, 600, 'linear')
+    $('#skillsButton').animate({top: '80%', left: '65%'}, 600, 'linear')
+}
+function animate3(){
+    $('#projectsButton').animate({top: '330px', right: '600px'}, 600, 'linear')
+    $('#contactButton').animate({left: '970px', bottom: '400px'}, 600, 'linear')
+    $('#aboutButton').animate({right: '540px', bottom: '240px'}, 600, 'linear')
+    $('#skillsButton').animate({top: '300px', left: '830px'}, 600, 'linear')
+}
+
 $('#aboutButton').click(function(){
     $('#aboutBody').html(`
     <div id="aboutPageContainer">
@@ -12,9 +34,9 @@ $('#aboutButton').click(function(){
         </div>
     </div>
     `)
-    $('.close').show()
-    $('.main-button').hide()
     $('#aboutBody').show()
+    animate3()
+    $('.close').show()
 })
 $('#projectsButton').click(function(){
     console.log('hello')
@@ -50,7 +72,8 @@ $('#projectsButton').click(function(){
         </div>
         `)
         $('.close').show(),
-        $('.main-button').hide(),
+        animate3()
+        // $('.main-button').hide(),
         $('#aboutBody').show()
 })
 $('#contactButton').click(function(){
@@ -69,7 +92,8 @@ $('#contactButton').click(function(){
         </div>
         `)
         $('.close').show(),
-        $('.main-button').hide(),
+        animate3(),
+        // $('.main-button').hide(),
         $('#aboutBody').show()
 })
 $('#resumeButton').click(function(){
@@ -115,13 +139,15 @@ $('#skillsButton').click(function(){
         </div>
         `)
         $('.close').show(),
-        $('.main-button').hide(),
+        animate3()
+        // $('.main-button').hide(),
         $('#aboutBody').show()
 })
     $('.close').click(()=>{
-        console.log('Hello')
-        $('#aboutBody').hide()
-        $('.close').hide()
         $('.main-button').show()
+        animate2(()=>{
+            $('#aboutBody').hide()
+        })
+        $('.close').hide()
     })
     
