@@ -16,10 +16,10 @@ function animate2(){
     $('#skillsButton').animate({top: '80%', left: '65%'}, 600, 'linear')
 }
 function animate3(){
-    $('#projectsButton').animate({top: '330px', right: '600px'}, 600, 'linear')
-    $('#contactButton').animate({left: '970px', bottom: '400px'}, 600, 'linear')
-    $('#aboutButton').animate({right: '540px', bottom: '240px'}, 600, 'linear')
-    $('#skillsButton').animate({top: '300px', left: '830px'}, 600, 'linear')
+    $('#projectsButton').animate({top: '430px', right: '700px'}, 600, 'linear')
+    $('#contactButton').animate({left: '1070px', bottom: '500px'}, 600, 'linear')
+    $('#aboutButton').animate({right: '640px', bottom: '340px'}, 600, 'linear')
+    $('#skillsButton').animate({top: '400px', left: '930px'}, 600, 'linear')
 }
 
 $('#aboutButton').click(function(){
@@ -73,7 +73,6 @@ $('#projectsButton').click(function(){
         `)
         $('.close').show(),
         animate3()
-        // $('.main-button').hide(),
         $('#aboutBody').show()
 })
 $('#contactButton').click(function(){
@@ -105,7 +104,8 @@ $('#resumeButton').click(function(){
         </div>
         `)
         $('.close').show(),
-        $('.main-button').hide(),
+        animate3()
+        // $('.main-button').hide(),
         $('#aboutBody').show()
 })
 

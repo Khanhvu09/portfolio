@@ -8,18 +8,28 @@ html,body {
 }
 /********** Main close button **********/
 .close-container{
+    display: flex;
+    justify-content: flex-end;
     position: fixed;
     z-index: 4;
+    top: 10px;
+    width: 69%;
 }
 .close-container button{
+    /* display: flex; */
+    /* justify-content: center; */
     cursor: pointer;
     outline: none;
-    background-color: #1d1e22; 
+    /* background-color: #1d1e22;  */
+    background-color: #d3b456; 
     border: 0px;
     -webkit-appearance: none;
     font-size: 15px;
-    color: #d4d4dc;
+    /* color: #d4d4dc; */
+    color: #1d1e22;
+    border-radius: 5px;
 }
+
 /********* Profile *********/
 .left {
     height: 90%;
