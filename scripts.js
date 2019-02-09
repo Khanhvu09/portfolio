@@ -35,8 +35,12 @@ $('#aboutButton').click(function(){
     </div>
     `)
     $('#aboutBody').show()
-    animate3()
-    $('.close').show()
+    if (parseInt($(window).width()) < 600){
+        $('.closeMobile').show()
+    } else {
+        $('.close').show(),
+        animate3()
+    }
 })
 $('#projectsButton').click(function(){
     console.log('hello')
@@ -71,9 +75,13 @@ $('#projectsButton').click(function(){
             </div>
         </div>
         `)
-        $('.close').show(),
-        animate3()
         $('#aboutBody').show()
+        if (parseInt($(window).width()) < 600){
+            $('.closeMobile').show()
+        } else {
+            $('.close').show(),
+            animate3()
+        }
 })
 $('#contactButton').click(function(){
     console.log('hello')
@@ -90,10 +98,13 @@ $('#contactButton').click(function(){
             </form>
         </div>
         `)
-        $('.close').show(),
-        animate3(),
-        // $('.main-button').hide(),
         $('#aboutBody').show()
+        if (parseInt($(window).width()) < 600){
+            $('.closeMobile').show()
+        } else {
+            $('.close').show(),
+            animate3()
+        }
 })
 $('#resumeButton').click(function(){
     console.log('hello')
@@ -103,10 +114,13 @@ $('#resumeButton').click(function(){
     
         </div>
         `)
-        $('.close').show(),
-        animate3()
-        // $('.main-button').hide(),
         $('#aboutBody').show()
+        if (parseInt($(window).width()) < 600){
+            $('.closeMobile').show()
+        } else {
+            $('.close').show(),
+            animate3()
+        }
 })
 
 $('#skillsButton').click(function(){
@@ -138,16 +152,24 @@ $('#skillsButton').click(function(){
             </div>
         </div>
         `)
-        $('.close').show(),
-        animate3()
-        // $('.main-button').hide(),
         $('#aboutBody').show()
+        if (parseInt($(window).width()) < 600){
+            $('.closeMobile').show()
+        } else {
+            $('.close').show(),
+            animate3()
+        }
 })
     $('.close').click(()=>{
         $('.main-button').show()
-        animate2(()=>{
-            $('#aboutBody').hide()
-        })
+        animate2()
+        // $('#aboutBody').hide()
         $('.close').hide()
+    })
+
+    $('.closeMobile').click(()=>{
+        $('.main-button').show()
+        $('#aboutBody').hide()
+        $('.closeMobile').hide()
     })
     
