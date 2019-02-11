@@ -24,25 +24,22 @@ html,body {
     /* width: 69%; */
 }
 .close-container-mobile button {
-    background-color: #1d1e22; 
+    background-color: #d3b456; 
     outline: none;
     border: 0px;
     -webkit-appearance: none;
     font-size: 15px;
-    color: #d4d4dc;
+    color: #1d1e22;
     border-radius: 5px;
+    margin-left: 5px;
 }
 .close-container button{
-    /* display: flex; */
-    /* justify-content: center; */
     cursor: pointer;
     outline: none;
-    /* background-color: #1d1e22;  */
     background-color: #d3b456; 
     border: 0px;
     -webkit-appearance: none;
     font-size: 15px;
-    /* color: #d4d4dc; */
     color: #1d1e22;
     border-radius: 5px;
 }
