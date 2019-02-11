@@ -1,3 +1,4 @@
+$('.closeMobile').hide()
 $('.close').hide()
 $('#aboutBody').hide();
 $(document).ready(()=>{
@@ -16,10 +17,11 @@ function animate2(){
     $('#skillsButton').animate({top: '80%', left: '65%'}, 600, 'linear')
 }
 function animate3(){
-    $('#projectsButton').animate({top: '430px', right: '700px'}, 600, 'linear')
-    $('#contactButton').animate({left: '1070px', bottom: '500px'}, 600, 'linear')
+    $('#projectsButton').animate({top: '530px', right: '800px'}, 600, 'linear')
+    $('#contactButton').animate({left: '1170px', bottom: '550px'}, 600, 'linear')
+    // $('#contactButton').animate({left: '100%', bottom: '500%'}, 600, 'linear')
     $('#aboutButton').animate({right: '640px', bottom: '340px'}, 600, 'linear')
-    $('#skillsButton').animate({top: '400px', left: '930px'}, 600, 'linear')
+    $('#skillsButton').animate({top: '500px', left: '1030px'}, 600, 'linear')
 }
 
 $('#aboutButton').click(function(){
