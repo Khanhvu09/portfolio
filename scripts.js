@@ -39,6 +39,7 @@ $('#aboutButton').click(function(){
     $('#aboutBody').show()
     if (parseInt($(window).width()) < 600){
         $('.closeMobile').show()
+        $('.main-button').hide()
     } else {
         $('.close').show(),
         animate3()
@@ -80,6 +81,7 @@ $('#projectsButton').click(function(){
         $('#aboutBody').show()
         if (parseInt($(window).width()) < 600){
             $('.closeMobile').show()
+            $('.main-button').hide()
         } else {
             $('.close').show(),
             animate3()
@@ -103,6 +105,7 @@ $('#contactButton').click(function(){
         $('#aboutBody').show()
         if (parseInt($(window).width()) < 600){
             $('.closeMobile').show()
+            $('.main-button').hide()
         } else {
             $('.close').show(),
             animate3()
@@ -119,6 +122,7 @@ $('#resumeButton').click(function(){
         $('#aboutBody').show()
         if (parseInt($(window).width()) < 600){
             $('.closeMobile').show()
+            $('.main-button').hide()
         } else {
             $('.close').show(),
             animate3()
@@ -157,6 +161,7 @@ $('#skillsButton').click(function(){
         $('#aboutBody').show()
         if (parseInt($(window).width()) < 600){
             $('.closeMobile').show()
+            $('.main-button').hide()
         } else {
             $('.close').show(),
             animate3()
