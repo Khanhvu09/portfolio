@@ -305,7 +305,7 @@ html,body {
 }
 #contact input {
     border: 1px solid black;
-    height: 48px;
+    height: 28px;
     width: 250px;
     background-color: #feda6a;
     opacity: 0.7;
@@ -404,6 +404,7 @@ html,body {
     }
     /********* Contact Page *********/
     #contact input {
+        height: 48px;
         width: 55%;
     }
     #contact textarea {
