@@ -458,7 +458,7 @@ html,body {
         right: 200px;
         transform: rotate(-45deg);
     }
-    #aboutPage p {
+    #aboutPage #bio {
         text-indent: 50px;
     }
     /********* Projects Page Button *********/

@@ -29,7 +29,7 @@ $('#aboutButton').click(function(){
         <div id="aboutPage">
             <h1>ABOUT ME</h1>
             <h3>Hi, I'm Khanh</h3>
-            <p>Born and raised in Orange County, CA. I have been in Atlanta long enough to know
+            <p id="bio">Born and raised in Orange County, CA. I have been in Atlanta long enough to know
             not to call it Hot-Lanta. I am a proud, analytical Full-Stack Web Developer who
             utilizes a dozen different technical skills from HTML to JavaScript.</p>
             <p>Most of my time is spent at the drawing board coming up with designs for my next project
@@ -44,8 +44,8 @@ $('#aboutButton').click(function(){
             My love for tech started when I was 8 when I got my first RC car, tore it apart, just to see how it worked and put it back together
             again to play with. That's when my family discovered that I was the "techie" to go to for all of the answers.
             Discovering my passion for coding started with Udemy courses learning this new "hobby" and then I 
-            looked up from my screen and it was 2:00am. This passion of mine has come with a lot of hours spent building websites from scratch, many nights of Chinese take-out and a few all-nighters
-            to perfect the projects while improving my code. Turning a hobby into a career is everyone's dream...I just happened to hustile to make 
+            looked up from my screen and it was 2:00 A.M. This passion of mine has come with a lot of hours spent building websites from scratch, many nights of Chinese take-out and a few all-nighters
+            to perfect the projects while improving my code. Turning a hobby into a career is everyone's dream...I just happened to hustle to make 
             that a reality.</p>
         </div>
     </div>
