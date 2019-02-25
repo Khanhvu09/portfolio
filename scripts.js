@@ -1,22 +1,22 @@
 $('.closeMobile').hide()
 $('.close').hide()
-$('#aboutBody').hide();
+$('#mainBody').hide();
 $(document).ready(()=>{
-    animate()
+    wordAnimation()
 })
-function animate(){
+function wordAnimation(){
     $('#about-text').animate({right: '40px',bottom:'60px'}, 600, 'linear')
     $('#contact-text').animate({left: '60px',bottom:'100px'}, 600, 'linear')
     $('#project-text').animate({right: '60px',top:'100px'}, 600, 'linear')
     $('#skills-text').animate({top: '60px',left:'40px'}, 600, 'linear')
 }
-function animate2(){
+function closeAnimation(){
     $('#projectsButton').animate({top: '80%', right: '35%'}, 600, 'linear')
     $('#contactButton').animate({left: '65%', bottom: '20%'}, 600, 'linear')
     $('#aboutButton').animate({right: '35%', bottom: '20%'}, 600, 'linear')
     $('#skillsButton').animate({top: '80%', left: '65%'}, 600, 'linear')
 }
-function animate3(){
+function openAnimation(){
     $('#projectsButton').animate({top: '530px', right: '800px'}, 600, 'linear')
     $('#contactButton').animate({left: '1170px', bottom: '550px'}, 600, 'linear')
     $('#aboutButton').animate({right: '640px', bottom: '340px'}, 600, 'linear')
@@ -24,14 +24,14 @@ function animate3(){
 }
 
 $('#aboutButton').click(function(){
-    $('#aboutBody').html(`
+    $('#mainBody').html(`
     <div id="aboutPageContainer">
         <div id="aboutPage">
             <h1>ABOUT ME</h1>
             <h3>Hi, I'm Khanh</h3>
             <p id="bio">Born and raised in Orange County, CA. I have been in Atlanta long enough to know
             not to call it Hot-Lanta. I am a proud, analytical Full-Stack Web Developer who
-            utilizes a dozen different technical skills from HTML to JavaScript.</p>
+            utilizes a dozen different technical skills from HTML to React</p>
             <p>Most of my time is spent at the drawing board coming up with designs for my next project
             or face down in my Mac debugging or typing out lines of code. If you do not
             see me there, I am doing 1 of these 3 things:</p>
@@ -50,18 +50,18 @@ $('#aboutButton').click(function(){
         </div>
     </div>
     `)
-    $('#aboutBody').show()
+    $('#mainBody').show()
     if (parseInt($(window).width()) < 812){
         $('.closeMobile').show()
         $('.main-button').hide()
     } else {
         $('.close').show(),
-        animate3()
+        openAnimation()
     }
 })
 $('#projectsButton').click(function(){
     console.log('hello')
-    $('#aboutBody').html(
+    $('#mainBody').html(
         `
         <h1 id="projectTitle" >Projects</h1>
         <div id="projectPage">
@@ -89,17 +89,17 @@ $('#projectsButton').click(function(){
             </div>
         </div>
         `)
-        $('#aboutBody').show()
-        if (parseInt($(window).width()) < 812){
-            $('.closeMobile').show()
-            $('.main-button').hide()
-        } else {
-            $('.close').show(),
-            animate3()
-        }
+    $('#mainBody').show()
+    if (parseInt($(window).width()) < 812){
+        $('.closeMobile').show()
+        $('.main-button').hide()
+    } else {
+        $('.close').show(),
+        openAnimation()
+    }
 })
 $('#contactButton').click(function(){
-    $('#aboutBody').html(
+    $('#mainBody').html(
         `
         <div id="contactPage">
             <form id="contact" method="POST" action="https://formspree.io/kqvu09@gmail.com">
@@ -112,36 +112,36 @@ $('#contactButton').click(function(){
             </form>
         </div>
         `)
-        $('#aboutBody').show()
-        if (parseInt($(window).width()) < 812){
-            $('.closeMobile').show()
-            $('.main-button').hide()
-        } else {
-            $('.close').show(),
-            animate3()
-        }
+    $('#mainBody').show()
+    if (parseInt($(window).width()) < 812){
+        $('.closeMobile').show()
+        $('.main-button').hide()
+    } else {
+        $('.close').show(),
+        openAnimation()
+    }
 })
 $('#resumeButton').click(function(){
     console.log('hello')
-    $('#aboutBody').html(
+    $('#mainBody').html(
         `
-        <div id="resume">
-    
+        <div>
+            <iframe id="resume" src="Resume.pdf"></iframe>
         </div>
         `)
-        $('#aboutBody').show()
-        if (parseInt($(window).width()) < 812){
-            $('.closeMobile').show()
-            $('.main-button').hide()
-        } else {
-            $('.close').show(),
-            animate3()
-        }
+    $('#mainBody').show()
+    if (parseInt($(window).width()) < 812){
+        $('.closeMobile').show()
+        $('.main-button').hide()
+    } else {
+        $('.close').show(),
+        openAnimation()
+    }
 })
 
 $('#skillsButton').click(function(){
     console.log('hello')
-    $('#aboutBody').html(
+    $('#mainBody').html(
         `
         <h1 id="skillsTitle">Skills</h1>
         <div id="skillsPage">
@@ -158,34 +158,34 @@ $('#skillsButton').click(function(){
                 <i class="devicon-apache-plain-wordmark"></i>
                 <i class="fab fa-node"></i>
                 <i class="devicon-bootstrap-plain-wordmark"></i>
+                <i class="devicon-react-original-wordmark"></i>
             </div>
             <h3 class="skillsTitle">Skills I'm learning</h3>
             <div id="learningSkills">
                 <i class="devicon-swift-plain"></i>
-                <i class="devicon-java-plain-wordmark"></i>
                 <i class="devicon-ruby-plain-wordmark"></i>
-                <i class="devicon-react-original-wordmark"></i>
             </div>
         </div>
         `)
-        $('#aboutBody').show()
-        if (parseInt($(window).width()) < 812){
-            $('.closeMobile').show()
-            $('.main-button').hide()
-        } else {
-            $('.close').show(),
-            animate3()
-        }
+    $('#mainBody').show()
+    if (parseInt($(window).width()) < 812){
+        $('.closeMobile').show()
+        $('.main-button').hide()
+    } else {
+        $('.close').show(),
+        openAnimation()
+    }
 })
-    $('.close').click(()=>{
-        $('.main-button').show()
-        animate2()
-        $('.close').hide()
-    })
 
-    $('.closeMobile').click(()=>{
-        $('.main-button').show()
-        $('#aboutBody').hide()
-        $('.closeMobile').hide()
-    })
+$('.close').click(()=>{
+    $('.main-button').show()
+    closeAnimation()
+    $('.close').hide()
+})
+
+$('.closeMobile').click(()=>{
+    $('.main-button').show()
+    $('#mainBody').hide()
+    $('.closeMobile').hide()
+})
     

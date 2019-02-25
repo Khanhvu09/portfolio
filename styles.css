@@ -1,27 +1,35 @@
 html,body {
     position: relative;
     margin: 0;
-    height: 100%;
+    height: 100vh;
     font-family: 'Text Me One', sans-serif;
     background-color: #1d1e22;
     overflow-x: hidden;
 }
-/********** Main close button **********/
-.close-container{
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    z-index: 4;
-    top: 10px;
-    width: 69%;
+#resumeButtonMobile {
+    position: relative;
+    padding: 20px 50px 20px 50px;
+    border-radius: 10px;
+    opacity: 0.7;
+    font-size: 16px;
+    outline: none;
+    color: #393f4d;
+    background-color: #feda6a;
+    z-index: 1;
+    font-family: 'Text Me One', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
 }
+#resumeButton {
+    display: none;
+}
+/********** Main close button **********/
 .close-container-mobile {
     display: flex;
     justify-content: flex-end;
     position: fixed;
     z-index: 4;
     top: 10px;
-    /* width: 69%; */
 }
 .close-container-mobile button {
     background-color: #d3b456; 
@@ -34,17 +42,7 @@ html,body {
     margin-left: 5px;
     opacity: 0.9;
 }
-.close-container button{
-    cursor: pointer;
-    outline: none;
-    background-color: #d3b456; 
-    border: 0px;
-    -webkit-appearance: none;
-    font-size: 15px;
-    color: #1d1e22;
-    border-radius: 5px;
-    opacity: 0.9;
-}
+
 
 /********* Profile *********/
 .left {
@@ -59,7 +57,7 @@ html,body {
     width: 200px;
 }
 #name {
-    height: 10%;
+    height: 10vh;
     padding: 5%;
     font-size: 2.5em;
     text-align: center;
@@ -73,24 +71,7 @@ html,body {
     color: #d4d4dc;
 }
 
-/********* Resume Button *********/
-.left button {
-    position: relative;
-    padding: 20px 50px 20px 50px;
-    border-radius: 10px;
-    opacity: 0.7;
-    font-size: 16px;
-    outline: none;
-    color: #393f4d;
-    background-color: #feda6a;
-    z-index: 1;
-    font-family: 'Text Me One', sans-serif;
-    font-weight: bold;
-}
-.left button:hover {
-    opacity: 1;
-    cursor: pointer;
-}
+
 /******** Links *********/
 .fab {
     color: #d4d4dc;
@@ -106,7 +87,7 @@ html,body {
     margin: 0.5rem;
 }
 /********* Pages **********/
-#aboutBody {
+#mainBody {
     display: block;
     overflow: auto;
     position: absolute;
@@ -269,8 +250,8 @@ html,body {
 .nav {
     z-index: 3;
     position: fixed;
-    height: 10%;
-    width: 100%;
+    height: 10vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: flex-end;    
@@ -281,7 +262,6 @@ html,body {
     outline: none;
     color: #393f4d;
     background-color: #d3b456;
-    /* opacity: 0.7; */
     border: gray;
     font-size: 18px;
     height: 100%;
@@ -302,7 +282,6 @@ html,body {
     height: 50%;
     width: 100%;
     margin: 0;
-    /* padding-top: 20px; */
     justify-content: space-around;
 }
 #contact input {
@@ -318,18 +297,18 @@ html,body {
     margin-bottom: 30px;
     outline: none;
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder { 
     font-family: 'Text Me One', sans-serif;
     color: #1d1e22;
-    opacity: 1; /* Firefox */
+    opacity: 1;
 }
   
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder { 
     font-family: 'Text Me One', sans-serif;
     color: #1d1e22;
 }
   
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder { 
     font-family: 'Text Me One', sans-serif;
     color: #1d1e22;
 }
@@ -360,10 +339,32 @@ html,body {
 }
 #contact span {
     font-size: 40px;
-    /* margin-bottom: 10px; */
+}
+
+
+#resume {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 @media only screen and (min-width: 812px) {
+    /********* Close Button *********/
+    .close{
+        position: fixed;
+        z-index: 2;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        outline: none;
+        background-color: #d3b456; 
+        border: 0px;
+        -webkit-appearance: none;
+        font-size: 15px;
+        color: #1d1e22;
+        border-radius: 5px;
+        opacity: 0.9;
+    }
     /********* Left Profile *********/
     .left {
         position: fixed;
@@ -372,7 +373,7 @@ html,body {
         background-color: #1d1e22;
         text-align: center;
         letter-spacing: 5px; 
-        z-index: 3;
+        z-index: 4;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -382,7 +383,7 @@ html,body {
     /********* Right Nav *********/
     .nav {
         width: 70%;
-        z-index: 2;
+        z-index: 3;
         position: fixed;
         height: 10%;
         display: block;
@@ -401,7 +402,8 @@ html,body {
     }
  
     /********* Pages *********/
-    #aboutBody {
+    #mainBody {
+        z-index: 1;
         position: relative;
         float: right;
         width: 70%;
@@ -452,6 +454,9 @@ html,body {
         box-shadow: 15px 20px 80px 1px #bbbbbb;
         z-index: -1;
     }
+    #aboutButton:active {
+        box-shadow: inset 0 0 10px #1d1e22f5;
+    }
     #about-text {
         position: absolute;
         bottom: 220px;
@@ -472,6 +477,9 @@ html,body {
     #projectsButton:hover{
         box-shadow: 15px -20px 80px 1px #bbbbbb;
         z-index: -1;
+    }
+    #projectsButton:active {
+        box-shadow: inset 0 0 10px #1d1e22f5;
     }
     #project-text {
         position: absolute;
@@ -519,6 +527,10 @@ html,body {
         box-shadow: -20px 20px 80px 1px #bbbbbb;
         z-index: -1;
     }
+    #contactButton:active {
+        box-shadow: inset 0 0 10px #1d1e22f5;
+    }
+    
     #contact-text {
         position: absolute;
         bottom: 400px;
@@ -535,8 +547,11 @@ html,body {
         transform-origin: top left;
     }
     #skillsButton:hover {
-        box-shadow: -20px -20px 80px 1px #bbbbbb;
+        box-shadow: -20px -20px 80px 1px;
         z-index: -1;
+    }
+    #skillsButton:active {
+        box-shadow: inset 0 0 10px #1d1e22f5;
     }
     #skills-text {
         position: absolute;
@@ -549,5 +564,35 @@ html,body {
     }
     #learningSkills {
         justify-content: left;
+    }
+
+    /********* Resume Button *********/
+    #resumeButton {
+        display: block;
+        position: relative;
+        padding: 20px 50px 20px 50px;
+        border-radius: 10px;
+        opacity: 0.7;
+        font-size: 16px;
+        outline: none;
+        color: #393f4d;
+        background-color: #feda6a;
+        z-index: 1;
+        font-family: 'Text Me One', sans-serif;
+        font-weight: bold;
+    }
+    #resumeButton:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    #resumeButtonMobile {
+        display: none;
+    }
+    /********* Resume Page *********/
+    #resume {
+        width: 63vw;
+        height: 100vh;
+        border: none;
     }
 } 
