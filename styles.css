@@ -1,7 +1,7 @@
 html,body {
     position: relative;
     margin: 0;
-    height: 100vh;
+    height: 100%;
     font-family: 'Text Me One', sans-serif;
     background-color: #1d1e22;
     overflow-x: hidden;
@@ -57,7 +57,7 @@ html,body {
     width: 200px;
 }
 #name {
-    height: 10vh;
+    height: 10%;
     padding: 5%;
     font-size: 2.5em;
     text-align: center;
@@ -250,8 +250,8 @@ html,body {
 .nav {
     z-index: 3;
     position: fixed;
-    height: 10vh;
-    width: 100vw;
+    height: 10%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;    
@@ -591,8 +591,8 @@ html,body {
     }
     /********* Resume Page *********/
     #resume {
-        width: 63vw;
-        height: 100vh;
+        width: 63%;
+        height: 100%;
         border: none;
     }
 } 
