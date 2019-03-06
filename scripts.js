@@ -101,6 +101,7 @@ $('#projectsButton').click(function(){
 $('#contactButton').click(function(){
     $('#mainBody').html(
         `
+        <div id="contactContainer">
         <div id="contactPage">
             <form id="contact" method="POST" action="https://formspree.io/kqvu09@gmail.com">
                 <span>Contact Me</span>
@@ -110,6 +111,15 @@ $('#contactButton').click(function(){
                 <input type="text" name="_gotcha" style="display:none">
                 <button type="submit">Submit</button>
             </form>
+        </div>
+        <div id="location">
+            <h1>Location:</h1>
+            <h2>Atlanta, GA</h2>
+            <h1>Phone:</h1>
+            <h2>(404)993-3613</h2>
+            <h1>Email:</h1>
+            <h2>Kqvu09@gmail.com</h2>
+        </div>
         </div>
         `)
     $('#mainBody').show()
